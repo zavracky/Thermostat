@@ -1,0 +1,3 @@
+  com_publish_on: C:\Users\zavra\AppData\Roaming\.homeassistant\myscript3_on.exe
+  com_publish_off: C:\Users\zavra\AppData\Roaming\.homeassistant\myscript3_off.exe
+  com_publish: 'PowerShell C:\Users\zavra\AppData\Roaming\.homeassistant\myscript3.ps1  payload'

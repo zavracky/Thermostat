@@ -1,0 +1,138 @@
+  Raspberry:
+    view: yes
+    name: Raspberry
+    entities:
+    - group.System
+  System:
+    name: System
+    entities:
+    - sensor.disk_use_percent_home
+    - sensor.memory_free
+    - sensor.processor_use
+    - sensor.since_last_boot
+    - switch.ups
+  Weather:
+    name: Local Weather
+    entities:
+    - sensor.yr_cloudiness
+    - sensor.yr_humidity
+    - sensor.yr_precipitation
+    - sensor.yr_temperature
+    - sensor.yr_symbol
+    - sun.sun
+  Environment:
+    view: yes
+    name: Environment
+    entities:
+    - group.Temp_Humidity
+    - group.Weather
+    - group.Thermostat_Temp_Humidity
+  Thermostat:
+    view: yes
+    name: Thermostat
+    entities:
+    - group.Modes
+    - group.Relays
+    - group.Zones
+    - group.Zone_Limits
+    - group.Thermostat_Temp_Humidity
+    - group.Buttons
+    - climate.boca_thermostat_1_5
+    - switch.boca_thermostat_1_21
+    - input_number.humidity_setpoint
+    
+  Modes:
+    name: Modes
+    entities:
+    - switch.boca_thermostat_1_10
+    - switch.boca_thermostat_1_11
+    - switch.boca_thermostat_1_12
+  Relays:
+    name: Relays
+    entities:
+    - binary_sensor.boca_thermostat_1_40
+    - binary_sensor.boca_thermostat_1_41
+    - binary_sensor.boca_thermostat_1_42
+  Zones:
+    name: Zones
+    entities:
+    - switch.boca_thermostat_1_30
+    - switch.boca_thermostat_1_31
+    - switch.boca_thermostat_1_32
+    - switch.boca_thermostat_1_33
+    - switch.boca_thermostat_1_34
+#    - group.Zone5
+#  Zone5:
+#    name: Zone5
+#    entities:
+#    - switch.boca_thermostat_1_34
+#    - group.Zone5_Limits
+  Zone_Limits:
+    name: Limit Detectors
+    entities:
+    - binary_sensor.temperatureandhumidity_2_3
+    - binary_sensor.temperatureandhumidity_2_4
+    - binary_sensor.temperatureandhumidity_3_3
+    - binary_sensor.temperatureandhumidity_3_4
+    - binary_sensor.temperatureandhumidity_4_3
+    - binary_sensor.temperatureandhumidity_4_4
+    - binary_sensor.temperatureandhumidity_5_3
+    - binary_sensor.temperatureandhumidity_5_4
+    - binary_sensor.temperatureandhumidity_6_3
+    - binary_sensor.temperatureandhumidity_6_4
+  Buttons:
+    name: Control Method
+    entities:
+    - switch.boca_thermostat_1_20
+    - switch.boca_thermostat_1_21
+    - switch.boca_thermostat_1_14
+  Thermostat_Temp_Humidity:
+    name: Control Inputs
+    entities:
+    - sensor.boca_thermostat_1_1
+    - sensor.boca_thermostat_1_2
+  Temp_Humidity:
+    name: Temp and Humidity
+    entities:
+    - sensor.temperatureandhumidity_2_0
+    - sensor.temperatureandhumidity_2_1
+    - sensor.temperatureandhumidity_3_0
+    - sensor.temperatureandhumidity_3_1
+    - sensor.temperatureandhumidity_4_0
+    - sensor.temperatureandhumidity_4_1
+    - sensor.temperatureandhumidity_5_0
+    - sensor.temperatureandhumidity_5_1
+    - sensor.temperatureandhumidity_6_0
+    - sensor.temperatureandhumidity_6_1
+  Leaks:
+    name: Leaks
+    entities:
+    - binary_sensor.airconditioner_leak_7_0
+    - binary_Sensor.airconditioner_leak_7_2
+    - sensor.airconditioner_leak_7_1
+    - sensor.airconditioner_leak_7_3
+  WaterControl:
+    name: Water Control
+    entities:
+    - switch.water_valve
+    - sensor.airconditioner_leak_7_4
+  Lighting:
+    view: yes
+    name: Lighting
+    entities:
+    - light.chandelier
+    - light.pauls_light
+    - light.judys_light
+    - light.study
+    - light.hue_white_lamp_1
+    - light.guest_1
+    - light.guest_2
+    - light.guest_dresser
+    - switch.boston_wemo_switch
+    - switch.livingroom_lamp
+  FloodControl:
+    view: yes
+    name: Flood Control
+    entities:
+    - group.WaterControl
+    - group.Leaks

@@ -1,0 +1,103 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: 26.385824
+  longitude: -80.071896
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 3
+  # metric for Metric, imperial for Imperial
+  unit_system: imperial
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: America/New_York
+  customize: !include customize.yaml
+
+# Show links to resources in log and frontend
+#introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+http:
+  # Uncomment this to add a password (recommended!)
+  api_password: ill8tony
+  # Uncomment this if you are using SSL or running in Docker etc
+  # base_url: example.duckdns.org:8123
+
+# Checks for available updates
+updater:
+
+# Discover some devices automatically
+discovery:
+  ignore:
+    - apple_tv
+    - samsung_tv
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+#conversation:
+
+# Enables support for tracking state changes over time.
+history:
+
+# View all events in a logbook
+logbook:
+
+# Track the sun
+sun:
+
+# Text to speech
+tts:
+  platform: google
+
+#notify:
+#  - name: BocaHA
+#    platform: pushbullet
+#    api_key: o.wMslHrmubdf4JU6sgyX6yFJV2YpxkKUb
+
+mysensors: 
+  gateways: 
+    - device: '/dev/ttyACM0'
+      persistence_file: '/home/homeassistant/.homeassistant/mysensors2.json'
+      baud_rate: 115200
+  optimistic: false
+  persistence: true
+  retain: true
+  version: '2.0'
+  
+wemo:
+#  static:
+#    - 192.168.0.2 # Living_room
+#    - 192.168.0.4 # Water_valve
+#    - 192.168.0.14 # UPS
+#    - 192.168.0.8 # wemo bridge
+
+lutron_caseta:
+    host: 192.168.0.10
+    keyfile: caseta.key
+    certfile: caseta.crt
+    ca_certs: caseta-bridge.crt
+    
+#hue:
+#  bridges:
+#    - host: 192.168.0.177
+
+input_number:
+    humidity_setpoint:
+        name: Humidity Setpoint
+        initial: 50
+        min: 40
+        max: 70
+        step: 1
+        mode: box
+        
+camera: !include cameras.yaml
+sensor: !include sensors.yaml
+switch: !include switches.yaml
+group: !include groups.yaml
+shell_command: !include shell_commands.yaml
+#script: !include scripts.yaml
+automation: !include automation.yaml
+#python_script:

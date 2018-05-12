@@ -1,0 +1,136 @@
+binary_sensor.airconditioner_leak_7_0:
+  friendly_name: AC_Leak
+  device_class: moisture
+binary_sensor.airconditioner_leak_7_2:
+  friendly_name: DHW_Leak
+binary_sensor.airconditioner_leak_7_7:
+  hidden: true
+binary_sensor.temperatureandhumidity_2_3:
+  friendly_name: Livingroom Open Limit
+binary_sensor.temperatureandhumidity_2_4:
+  friendly_name: Livingroom Closed Limit
+binary_sensor.temperatureandhumidity_3_3:
+  friendly_name: Dining Room Open Limit
+binary_sensor.temperatureandhumidity_3_4:
+  friendly_name: Dining Room Closed Limit
+binary_sensor.temperatureandhumidity_4_3:
+  friendly_name: Master Open Limit
+binary_sensor.temperatureandhumidity_4_4:
+  friendly_name: Master Closed Limit
+binary_sensor.temperatureandhumidity_5_3:
+  friendly_name: Guest Open Limit
+binary_sensor.temperatureandhumidity_5_4:
+  friendly_name: Guest Closed Limit
+binary_sensor.temperatureandhumidity_6_3:
+  friendly_name: Study Open Limit
+binary_sensor.temperatureandhumidity_6_4:
+  friendly_name: Study Closed Limit
+binary_sensor.boca_thermostat_1_40:
+  friendly_name: Fan Relay
+binary_sensor.boca_thermostat_1_41:
+  friendly_name: Cool Relay
+binary_sensor.boca_thermostat_1_42:
+  friendly_name: Heat Relay
+climate.boca_thermostat_1_5:
+  friendly_name: Boca Thermostat
+  min_temp: 65
+  max_temp: 85
+  entity_picture: https://newberlinheating.files.wordpress.com/2013/06/heating-cooling.png
+light.master:
+  hidden: true
+light.living_room:
+  hidden: true
+light.dining_room:
+  hidden: true
+light.study_2:
+  hidden: true
+light.bedroom:
+  hidden: true
+light.boca_thermostat_1_3:
+  hidden: true
+light.guest_bedroom:
+  hidden: true
+light.hue_white_lamp_1:
+  friendly_name: Guest 1
+light.hue_white_lamp_1_2:
+  friendly_name: Guest 2
+sensor.disk_use_percent_home:
+  friendly_name: Disk Use
+  icon: mdi:harddisk
+  unit_of_measurement: '%'
+sensor.memory_free:
+  friendly_name: Free Memory
+sensor.processor_use:
+  friendly_name: Processor Use
+sensor.since_last_boot:
+  friendly_name: Time since last boot
+sensor.boca_thermostat_1_1:
+  friendly_name: Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.boca_thermostat_1_2:
+  friendly_name: Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.temperatureandhumidity_2_0:
+  friendly_name: Livingroom Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.temperatureandhumidity_3_0:
+  friendly_name: Diningroom Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.temperatureandhumidity_4_0:
+  friendly_name: Master Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.temperatureandhumidity_5_0:
+  friendly_name: Guest Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.temperatureandhumidity_6_0:
+  friendly_name: Study Humidity
+  entity_picture: http://www.quicklogic.com/assets/Uploads/al3s2/_resampled/ResizedImage200200-sensor-icon-humid.png
+sensor.temperatureandhumidity_2_1:
+  friendly_name: Livingroom Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.temperatureandhumidity_3_1:
+  friendly_name: Diningroom Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.temperatureandhumidity_4_1:
+  friendly_name: Master Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.temperatureandhumidity_5_1:
+  friendly_name: Guest Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.temperatureandhumidity_6_1:
+  friendly_name: Study Temperature
+  entity_picture: https://cdn1.iconfinder.com/data/icons/large-weather-icons/512/Thermometer.png
+sensor.airconditioner_leak_7_1:
+  friendly_name: AC_Amount
+  entity_picture: http://www.atwinengineering.com/images/services/pump.gif
+sensor.airconditioner_leak_7_3:
+  friendly_name: DHW_Amount
+  entity_picture: http://www.atwinengineering.com/images/services/pump.gif
+sensor.airconditioner_leak_7_4:
+  friendly_name: Flow Rate
+  entity_picture: http://www.bhrgroup.com/Portals/0/images/Media%20Centre/Icons.FS_RGB.jpg
+switch.boca_thermostat_1_10:
+  friendly_name: Fan
+switch.boca_thermostat_1_11:
+  friendly_name: Cool
+switch.boca_thermostat_1_12:
+  friendly_name: Heat
+switch.boca_thermostat_1_13:
+  friendly_name: HVAC Active
+  hidden: true
+switch.boca_thermostat_1_14:
+  friendly_name: Refresh State
+switch.boca_thermostat_1_20:
+  friendly_name: Run (on) Setpt (off)
+switch.boca_thermostat_1_21:
+  friendly_name: Temp(on) Hum(off)
+switch.boca_thermostat_1_30:
+  friendly_name: Livingroom
+switch.boca_thermostat_1_31:
+  friendly_name: Diningroom
+switch.boca_thermostat_1_32:
+  friendly_name: Master
+switch.boca_thermostat_1_33:
+  friendly_name: Guest
+switch.boca_thermostat_1_34:
+  friendly_name: Study
